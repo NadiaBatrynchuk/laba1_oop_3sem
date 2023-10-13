@@ -30,7 +30,7 @@ public class GameAccount
     public GameAccount(string UserName, int BaseRating, int GamesCount)
     {
         this.UserName = UserName;
-        this.currentrating = BaseRating;
+        this.currentrating = (BaseRating < 0)? 1: BaseRating;
       
     }
 
